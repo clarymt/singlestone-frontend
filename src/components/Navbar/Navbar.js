@@ -5,7 +5,9 @@ import "./Navbar.css";
 class Navbar extends Component {
     render() {
         return(
-            <img className="logo" src={logo} alt="Endless" />
+            <div className= "background">
+            <img className="logo" src={logo} alt="Endless"/>
+            </div>
         )
     }
 }

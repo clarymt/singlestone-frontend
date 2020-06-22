@@ -8,9 +8,9 @@ import Steps from './components/Steps/Steps';
 function App() {
   return (
    <div>
-     <Navbar />
-   <Body />
-   <Steps />
+    <Navbar />
+    <Body />
+    <Steps />
   </div>
   );
 }
