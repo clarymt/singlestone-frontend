@@ -1,3 +1,53 @@
 .Body {
     font-family: 'Lato', sans-serif;
 }
+
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+.text {
+    position: absolute;
+    bottom: 12%;
+    left: 16.5%;
+  }
+
+.lineOne {
+    font-weight: lighter;
+    font-size: 130%;
+    margin-bottom: 0.5%;
+}
+
+.lineTwo {
+    font-weight: lighter;
+    font-size: 290%;
+    margin-top: 0px;
+}
+
+.lineThree {
+    font-size: 105%;
+    font-weight: lighter;
+}
+
+#excitement {
+    margin-top: -7%;
+    margin-bottom: 0%;
+}
+
+.background {
+    width: 100%;
+}
+
+.button {
+    background-color: #47e4c2;
+    color: black;
+    font-weight: 500;
+    border-radius: 25px;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}

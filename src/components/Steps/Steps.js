@@ -6,23 +6,21 @@ class Steps extends Component {
 
     constructor(props) {
         super(props);
-        this.titleWasClicked = this.titleWasClicked.bind(this) 
         this.state = {
             items: [],
             isLoaded: false,
         }
     }
     
-    titleWasClicked() {
-        alert(this.props);
-        console.log(this.props)
-    }
+   
 //API
     componentDidMount() {
         fetch('https://uqnzta2geb.execute-api.us-east-1.amazonaws.com/default/FrontEndCodeChallenge')
             .then(res => res.json())
             .then((json) => {
                 json.sort((a, b) => a.stepNumber - b.stepNumber);
+                // this.versionContent.reduce((a,c) =>
+                // !a || c.effectiveDate > a.effectiveDate ? c : a);
                 // json.sort((a, b) => a.item.versionContent.effectiveDate + b.item.versionContent.effectiveDate);
 
                 this.setState({
@@ -45,25 +43,16 @@ class Steps extends Component {
         else {
             return(
             <div class="API">
-                <ul>
+                <div class="row">
                     {items.map(item => (
-                        <li key={item.id}>
+                        <div class="column" key={item.id}>
                             {item.stepNumber} | {item.versionContent[0].title} | {item.versionContent[0].body} |
                             <div className={item.stepNumber}>{item.stepNumber.toString().padStart(2, "0")}</div>
                             <button onClick={this.titleWasClicked}>{item.stepNumber}</button>
 
-                        </li>
+                        </div>
                     ))}
-
-
-{items.map(item => (
-                        <li key={item.id}>
-                            {item.stepNumber} | {item.versionContent[0].title} | {item.versionContent[0].body} |
-                            <div className={item.stepNumber}>{item.stepNumber.toString().padStart(2, "0")}</div>
-
-                        </li>
-                    ))}
-                </ul>
+                </div>
             </div>
             )
         }
