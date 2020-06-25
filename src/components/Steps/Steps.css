@@ -1,0 +1,22 @@
+.column {
+    float: left;
+    width: 18.75%;
+    /* padding-left: 2%; */
+    /* padding-right: 2%; */
+    margin-left: 5%;
+    text-align: center;
+    background-color: #f2f1ef;
+    justify-content: center;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    display: table;
+    justify-content: center;
+    clear: both;
+  }
+
+  .API {
+    justify-content: center;
+  }

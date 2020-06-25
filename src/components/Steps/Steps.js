@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import axios from "axios";
+import "./Steps.css";
 
 
 class Steps extends Component {
@@ -46,10 +46,9 @@ class Steps extends Component {
                 <div class="row">
                     {items.map(item => (
                         <div class="column" key={item.id}>
-                            {item.stepNumber} | {item.versionContent[0].title} | {item.versionContent[0].body} |
-                            <div className={item.stepNumber}>{item.stepNumber.toString().padStart(2, "0")}</div>
-                            <button onClick={this.titleWasClicked}>{item.stepNumber}</button>
-
+                            <h1 class="fun" className={item.stepNumber}>{item.stepNumber.toString().padStart(2, "0")}</h1> 
+                            <p>{item.versionContent[0].title}</p>
+                            <p>{item.versionContent[0].body}</p>
                         </div>
                     ))}
                 </div>
