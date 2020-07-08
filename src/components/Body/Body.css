@@ -50,4 +50,21 @@
     padding-right: 7%;
     padding-top: 1%;
     padding-bottom: 1%;
+    transition: 1s;
 }
+
+.button:hover {
+  background-color: white;
+}
+
+@media only screen and (max-width: 320px) {
+    .lineThree {
+font-size: 50%;
+    }
+    .lineTwo {
+        font-size: 100%
+    }
+    .Body {
+        size: 100%;
+    }
+  }

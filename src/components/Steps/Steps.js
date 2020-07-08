@@ -46,8 +46,9 @@ class Steps extends Component {
                 <div class="row">
                     {items.map(item => (
                         <div class="column" key={item.id}>
-                            <h1 class="fun" className={item.stepNumber}>{item.stepNumber.toString().padStart(2, "0")}</h1> 
-                            <p>{item.versionContent[0].title}</p>
+                            <h1 id="titleNumber" className={item.stepNumber}>{item.stepNumber.toString().padStart(2, "0")}</h1> 
+                            <hr></hr>
+                            <p class="titleHeading">{item.versionContent[0].title}</p>
                             <p>{item.versionContent[0].body}</p>
                         </div>
                     ))}

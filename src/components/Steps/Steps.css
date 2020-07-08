@@ -1,3 +1,7 @@
+.Steps {
+    font-family: 'Lato', sans-serif;
+}
+
 .column {
     float: left;
     width: 18.75%;
@@ -19,4 +23,31 @@
 
   .API {
     justify-content: center;
+  }
+
+  hr {
+    height:2px;
+    border-width:0;
+    color: #47e4c2;
+    background-color: #47e4c2;
+    width: 50px;
+  }
+
+  #titleNumber {
+      font-weight: normal;
+      font-size: 250%;
+      margin-bottom: 0px; 
+  }
+
+  .titleHeading {
+    font-weight: bold;
+  }
+
+  @media only screen and (max-width: 425px) {
+    .column {
+        width:80%;
+        margin-left: 0%;
+        padding: 0% 10% 0% 10%;
+    }
+
   }
