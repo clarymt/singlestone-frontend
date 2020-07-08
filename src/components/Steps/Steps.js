@@ -49,7 +49,7 @@ class Steps extends Component {
                             <h1 id="titleNumber" className={item.stepNumber}>{item.stepNumber.toString().padStart(2, "0")}</h1> 
                             <hr></hr>
                             <p class="titleHeading">{item.versionContent[0].title}</p>
-                            <p>{item.versionContent[0].body}</p>
+                            <p class="titleBody">{item.versionContent[0].body}</p>
                         </div>
                     ))}
                 </div>
