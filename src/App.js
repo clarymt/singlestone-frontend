@@ -7,11 +7,11 @@ import Steps from './components/Steps/Steps';
 
 function App() {
   return (
-   <div>
-    <Navbar />
-    <Body />
-    <Steps />
-  </div>
+    <div>
+      <Navbar />
+      <Body />
+      <Steps />
+    </div>
   );
 }
 

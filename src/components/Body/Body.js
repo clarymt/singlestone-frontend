@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Background from "./photo-couch_2xCropped.jpg"
 import "./Body.css";
 
+//Middle section of page
 class Body extends Component {
     render() {
         return (
@@ -14,11 +15,11 @@ class Body extends Component {
                     <p className="lineThree">
                         What's the best way to shop for the latest video games
                         <br></br>
-                        and peripherals? How about never shopping at all? 
+                        and peripherals? How about never shopping at all?
                         <br></br>
                         You'll get new stuff on your doorstep - every month.
                     </p>
-                        <br></br>
+                    <br></br>
                     <btn className="button">GET STARTED</btn>
                 </div>
             </div>
