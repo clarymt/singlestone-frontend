@@ -45,7 +45,7 @@
 
   @media only screen and (max-width: 425px) {
     .column {
-        width:80%;
+        width:100%;
         margin-left: 0%;
         padding: 0% 10% 0% 10%;
     }
